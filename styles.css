@@ -1,101 +1,34 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+body{
+	background-color: #003333;
 }
-
-.tuner {
-    text-align: center;
+h1{
+	color: #669999;
+	text-align: center;
+	font-family: URW Chancery L, cursive;
 }
-
-h1 {
-    color: #333;
+footer{
+	font-family: URW Chancery L, cursive;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:30px;
+	text-align: center;
+	padding: 2%;
 }
-
-label {
-    margin-top: 10px;
-    display: block;
+a{
+	text-decoration:none;
+	color: #669999;
 }
-
-select {
-    margin-top: 5px;
-    padding: 5px;
+a:hover{
+	color: #ffffff;
 }
-
-.wheel-container {
-    position: relative;
-    margin-top: 20px;
+#doughnut {
+		    position: absolute;
+		    top:0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin:auto;
+		    text-align: center;
 }
-
-.wheel {
-    width: 300px;
-    height: 300px;
-    background: conic-gradient(
-        from 0deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
-    );
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid #fff; /* Add border to distinguish notes */
-}
-
-.arrow {
-    width: 2px;
-    height: 80px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    transform-origin: 50% 100%;
-}
-
-.note-labels {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.note-label {
-    position: absolute;
-    width: 2px;
-    height: 12px;
-    background-color: #000;
-    transform-origin: 50% 100%;
-    bottom: 50%;
-}
-
-#status {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-#cent-info {
-    margin-top: 10px;
-}
-
-#cent-diff {
-    font-weight: bold;
-}
-

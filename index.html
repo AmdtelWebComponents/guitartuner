@@ -1,30 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Tuner</title>
-    <link rel="stylesheet" href="styles.css">
+	<title>Rhythm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <div class="tuner">
-        <h1>Guitar Tuner</h1>
-        <label for="tuning">Select Tuning:</label>
-        <select id="tuning" onchange="changeTuning()">
-            <option value="E">Standard (E)</option>
-            <option value="Eb">Half Step Down (Eb)</option>
-            <!-- Add more tuning options as needed -->
-        </select>
-        <div class="wheel-container">
-            <div class="wheel" id="wheel"></div>
-            <div class="arrow" id="arrow"></div>
-	    <div class="note-labels" id="note-labels"></div>
-        </div>
-        <p id="status">Listening...</p>
-        <p id="cent-info">Cent difference: <span id="cent-diff">0</span></p>
-    </div>
-
-    <script src="app.js"></script>
+	<h1>Rhythm</h1>
+	<!-- Doughnut chart showing tuning information -->
+	<canvas id="doughnut"></canvas>
+	<footer><a target="_blank" href="https://github.com/G0SSE"</a></footer>
 </body>
 </html>
-
